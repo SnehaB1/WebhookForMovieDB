@@ -28,13 +28,13 @@ server.post('/get-movie-details', (req, res) => {
 
             return res.json({
                 fulfillmentText: dataToSend,
-                source: 'get-movie-details'
+                languageCode: 'en'
             });
         });
     }, (error) => {
         return res.json({
             fulfillmentText: 'Something went wrong!',
-            source: 'get-movie-details'
+            languageCode: 'en'
         });
     });
 });
